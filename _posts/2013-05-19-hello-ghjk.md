@@ -1,6 +1,6 @@
 ---
-layout:default
-title:hello github & jekyll
+layout: default
+title: hello github & jekyll
 ---
 
 ##{{ page.title }}
