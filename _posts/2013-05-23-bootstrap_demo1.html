@@ -1,0 +1,417 @@
+---
+title: bootstrap_demo1
+---
+<html>
+<head>
+	<title>前端社区</title>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-responsive.css">
+	<link rel="author" content="https://plus.google.com/u/0/112079569323185133193/about">
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="github1.png">
+	-->
+	<link rel="shortcut icon" type="image/x-icon" href="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg">
+	<link rel="dns-prefetch" href="http://qethan.github.io/jekyll_demo/">
+	<style type="text/css">
+		.feed_link {
+			float: right;
+			margin-top: -50px;
+			margin-right: 10px;
+		}
+		.feed_link a.feed {
+			width: auto;
+			padding-left: 18px;
+			color: #B94E22;
+		}
+		.feed_link a {
+			text-decoration: none;
+		}
+		.feed_link .icon {
+			margin-bottom: 3px;
+		}
+		.icon_rss {
+			width: 26px;
+			height: 26px;
+		}
+		.icon {
+			display: inline-block;
+		}
+
+		.row-fluid>.content {
+			background-color: #eeeeee;
+		}
+
+		h1 {
+			font-size: 22px;
+			color: #333;
+			text-align: left;
+			line-height: 100%;
+			margin-bottom: 8px;
+		}
+
+
+		.box {
+			background-color: #eeeeee;
+			padding: 10px;
+			margin: 0 0 20px 0;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			-webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.05);
+			-moz-box-shadow: 0 0px 2px rgba(0,0,0,0.1);
+			box-shadow: 0 0px 2px rgba(0,0,0,0.05);
+		}
+
+		.box_gray {
+			background-color: #eeeeee;
+		}
+
+		.infos {
+			position: relative;
+			margin-bottom: 10px;
+			margin-right: 56px;
+			border-bottom: 1px solid #ddd;
+			margin: 0 -10px;
+			padding: 0 10px 5px 10px;
+		}
+
+		.topic .info {
+			color: #bbb;
+			margin-bottom: 2px;
+			font-size: 12px;
+		}
+		.topic .info .node {
+			padding: 1px 5px;
+			color: #778087;
+			text-decoration: none;
+			background-color: #f5f5f5; 
+		}
+		#topic .entry-content{
+			position: relative;
+			line-height: 160%;
+			font-size: 14px;
+			text-overflow: ellipsis;
+			word-wrap: break-word;
+			margin-bottom: 10px;
+			margin-top: 18px;
+		}
+		.entry-content h4 {
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 100%;
+			margin: 0;
+			color: #222;
+			margin-top: 20px;
+			border-left: 15px solid #ddd;
+			padding-left: 5px;
+			margin-bottom: 8px;
+		}
+		hr {
+			margin: 18px 0;
+			border: 0;
+			border-top: 1px solid #f0ffff;
+			border-bottom: 1px solid #f7f7f7;
+		}
+
+		blockquote {
+			padding: 0 0 0 15px;
+			margin: 0 0 18px;
+			border-left: 5px solid #ddd;
+		}
+
+		blockquote p {
+			font-size: 13px;
+			color: #666;
+			font-weight: normal;
+			line-height: 150%;
+		}
+
+		#replies .total {
+			padding: 0 10px 6px 10px;
+			border-bottom: 1px solid #DDD;
+			color: #999;
+			margin: 0 -10px;
+		}
+
+		#replies .items {
+			background-color: #ffffff;
+		}
+		#replies .reply {
+			border-bottom: 1px solid #DDD;
+			padding: 8px 10px;
+			margin: 0 -10px;
+			background: #ffffff;
+		}
+		#replies .reply .face {
+			margin-top: -2px;
+			padding-right: 8px;
+			width: 48px;
+			height: 48px;
+			margin-left: 0;
+		}
+
+		abbr[title] {
+			border: 0;
+			cursor: default;
+		}
+		#replies .reply .replyinfos {
+			padding-left: 58px;
+		}
+		#replies .reply .replyinfos .replyinfo {
+			font-size: 12px;
+			color: #bbb;
+		}
+
+		#replies .reply-content {
+			position: relative;
+			line-height: 160%;
+			font-size: 14px;
+			text-overflow: ellipsis;
+			word-wrap: break-word;
+		}
+		.box h2.title {
+			font-size: 12px;
+			margin: 0 -10px;
+			padding: 0 10px;
+			margin-bottom: 8px;
+			color: #999;
+			line-height: 100%;
+			border-bottom: 1px solid #ddd;
+			padding-bottom: 8px;
+			text-align: center;
+		}
+
+		.footer {
+			text-shadow: 0 1px 0 #fff;
+		}
+	  .footer p {
+	  	text-align: center;
+	  	color: #555;
+	  }
+	</style>
+</head>
+
+<body data-offset="140">
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+
+				<a class="brand" href="#">
+					<img style="width:49px;height:20px;" src="./github3.jpeg"></a>
+				<ul class="nav">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">社区</a>
+					</li>
+					<li>
+						<a href="#">Wiki</a>
+					</li>
+					<li>
+						<a href="#">伪Geek</a>
+					</li>
+				</ul>
+				<form class="navbar-form pull-left">
+					<input type="text" name="q" style="height:30px;" class="span3" placeholder="搜索"></form>
+				<ul class="nav pull-right">
+					<li class="first">
+						<a href="#">注册</a>
+					</li>
+					<li class="last">
+						<a href="#">登录</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid" style="padding-top:60px;">
+		<div id="catalog">
+			<ul class="breadcrumb">
+				<li class="first">
+					<a href="#">Home</a>
+					<span class="divider">/</span>
+				</li>
+				<li>
+					<a href="#">Topic</a>
+					<span class="divider">/</span>
+				</li>
+				<li>
+					<a href="#">Node</a>
+					<span class="divider">/</span>
+				</li>
+				<li class="active">浏览</li>
+			</ul>
+		</div>
+		<div class="feed_link">
+			<a href="#" class="feed" title="订阅RSS">
+				<img class="icon icon_rss" src="http://www.iconpng.com/png/bluish/rss.png">Feed</a>
+		</div>
+		<div class="row-fluid">
+			<div class="content span8 box">
+				<div id="topic">
+					<div class="infos">
+						<div class="avata_large pull-right">
+							<a href="#">
+								<img alt="me" class="uface" src="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg" style="width:48px;height:48px;">
+							</a>
+						</div>
+						<h1 class="entry-title">伪前端，伪Geek</h1>
+						<div class="info">
+							<a href="#" class="node">JavaScript</a>
+							 •
+							<a href="#" data-name="QETHAN">QETHAN</a>
+							 • 于
+							<abbr class="timeago" title>一光年前</abbr>
+							发布
+							 • 
+							最后由 
+							<a href="#" data-name="git">git</a>
+							回复
+							 • 
+							0次阅读 
+						</div>
+					</div>
+					<div class="entry-content">
+						<p>
+							自诩为程序员一枚，热爱前端开发，实力不济，资历甚微。 热爱github，实属伪Geek。
+							即使挫折无数，也会走在前端的路上
+						</p>
+						<hr>
+						<h4>序</h4>
+						<hr>
+						<blockquote>
+							<p>
+								GitHub 是一个用于使用Git版本控制系统项目的共享虚拟主机服务。它由GitHub公司（曾称Logical Awesome）的开发者Chris Wanstrath、PJ Hyett和Tom Preston-Werner使用Ruby on Rails编写而成。
+								GitHub同时提供付费账户和为开源项目提供的免费账户。根据在2009年的Git用户调查，GitHub是最流行的Git存取站点。[2]它提供了像feeds、followers和显示开发者们怎样在他们版本库上的版本工作的网络图表。
+								GitHub也提供一个粘贴箱风格的站点，个人信息库和网页使用Wiki，通过一个git版本库即可对这些页面进行编辑。
+								截至2010年1月，GitHub仍然由GitHub公司所经营。
+							</p>
+						</blockquote>
+
+						<p>
+							CoffeeScript 是一套 JavaScript 的转译语言。受到 Ruby、Python 与 Haskell 等语言的启发[1]，CoffeeScript 增强了 JavaScript 的简洁性与可读性。此外，CoffeeScript 也新增了更复杂的功能，例如列表综合（List comprehension）、类型比对（Pattern matching）等。一般来说，CoffeeScript 可以在不影响执行效能的情况下，缩短约三分之一的程式码长度[3]。自从2011年6月以来，CoffeeScript 已经是 GitHub 上最受瞩目的专案之一。
+							<br/>
+							<br/>
+							2009年12月3日，Jeremy Ashkenas 在 Git 上对 CoffeeScript 做出了第一笔提交“这是这个神秘语言最初的提交。（initial commit of the mystery language.）”[5]当时的编译器由 Ruby 语言所写成。在同年12月24日，Ashkenas 做出了第一个上标签与归档的版本－0.1.0。2010年2月21日，他释出了 0.5 版，此版本将原先由 Ruby 撰写的编译器改写为纯 CoffeeScript 撰写。当时吸引了 GitHub 上的许多贡献者，每日约有 300 人次造访该专案的页面。2010年12月24日，Askenas 释出了 1.0.0 稳定版本，并在 Hacker News 上发表。Hacker News 也是当时此专案第一次发表的网站。
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="sidebar span4">
+				<div class="box">
+					<h2 class="title">便利贴</h2>
+					<div class="side-content">
+						跟着心在前端和艺术的道路上奔跑起来吧
+					</div>
+				</div>
+				<div class="box">
+					<h2 class="title">看看其他人的话题</h2>
+					<ul>
+						<li>
+							<a href="#" title="如果使用git">如果使用git</a>
+						</li>
+						<li>
+							<a href="#" title="开始github之旅">开始github之旅</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+		<div id="replies" class="row-fluid">
+			<div class="span8 box box_gray">
+				<div class="total">
+					共收到 
+					<strong> n </strong>
+					条回复
+				</div>
+				<div class="items">
+					<div class="reply" id="reply1">
+						<div class="pull-left face">
+							<a href="#">
+								<img alt="reply1" class="uface" src="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg" >
+							</a>
+						</div>
+						<div class="replyinfos">
+							<div class="replyinfo">
+								<span class="name">
+									<a href="#" data-name="ethan">ethan</a>
+									   1楼,
+									<abbr class="timeago" title="">1秒前</abbr>
+								</span>
+								<span class="opts"></span>
+							</div>
+							<div class="reply-content">
+								coffeeScript --------->
+							</div>
+						</div>
+					</div>
+
+					<div class="reply" id="reply2">
+						<div class="pull-left face">
+							<a href="#">
+								<img alt="reply2" class="uface" src="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg" style="width:48px;height:48px;">
+							</a>
+						</div>
+						<div class="replyinfos">
+							<div class="replyinfo">
+								<span class="name">
+									<a href="#" data-name="ethan">lee</a>
+									   2楼,
+									<abbr class="timeago" title="">2秒前</abbr>
+								</span>
+								<span class="opts"></span>
+							</div>
+							<div class="reply-content">
+								许多 JavaScript 的陈述句皆可在 CoffeeScript 中视为表达式。例如，if, switch 与 for 等。这些控制陈述句也有后缀的版本。
+CoffeeScript 的一般原则，是可以省略许多不必要的括号和大括号，可以使用缩排来取代。可以以隐喻方式呼叫函数（在 JavaScript 中呼叫函数所需的括号可以被省略），物件文字通常可以自动侦测。
+							</div>
+						</div>
+					</div>
+
+					<div class="reply" id="reply3">
+						<div class="pull-left face">
+							<a href="#">
+								<img alt="reply3" class="uface" src="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg" >
+							</a>
+						</div>
+						<div class="replyinfos">
+							<div class="replyinfo">
+								<span class="name">
+									<a href="#" data-name="ethan">LBJ</a>
+									   3楼,
+									<abbr class="timeago" title="">1秒前</abbr>
+								</span>
+								<span class="opts"></span>
+							</div>
+							<div class="reply-content">
+								CoffeeScript 的编译器在 0.5 版本之后由 CoffeeScript 本身写成，为 Node.js 里的一个工具程式。但核心程式码并不依赖 Node.js，且可直接在任何支援 JavaScript 的环境中使用。[8]此外，可以使用 Coffee Maven Plugin 作为 Node.js 之外的替代方案，这是 Apache Maven 建置工具的外挂，由 Rhino JavaScript 引擎并以 Java 语言写成。
+在 CoffeeScript.org 官方网站的选单上有“Try CoffeeScript”按钮，可以让使用者直接输入 CoffeeScript 程式码并直接在浏览器上编译成 JavaScript。另外一个网站“jscoffee[9]”提供双向转译的功能。
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<p>
+				&copy; 2013 QETHAN <a href="https://github.com/QETHAN">Github</a>
+			</p>
+		</div>
+	</footer>
+	<script src="//cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//cdnjs.bootcss.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
