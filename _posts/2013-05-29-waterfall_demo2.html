@@ -1,13 +1,13 @@
 ---
-title: waterfall_demo_filter
+title: waterfall_demo2
 ---
 <!doctype html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>resize animate</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/waterfall.css">
+    <link rel="stylesheet" href="{{site.baseurl}}css/waterfall_demo2_css/reset.css">
+    <link rel="stylesheet" href="{{site.baseurl}}css/waterfall_demo2_css/waterfall.css">
 </head>
 <body>
 <div id="header">
@@ -36,7 +36,7 @@ $('#container').waterfall({
     animationOptions: {
     },
     path: function(page) {
-        return '../data/data1.json?page=' + page;
+        return '{{site.baseurl}}/data/data1.json?page=' + page;
     }
 });
 </script>
