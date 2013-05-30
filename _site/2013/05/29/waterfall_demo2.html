@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>resize animate</title>
+    <link rel="stylesheet" href="/jekyll_demo/css/waterfall_demo2_css/reset.css">
+    <link rel="stylesheet" href="/jekyll_demo/css/waterfall_demo2_css/waterfall.css">
+</head>
+<body>
+<div id="header">
+    <h1>resize animate</h1>
+</div>
+<div id="container"></div>
+
+<script type="text/x-handlebars-template" id="waterfall-tpl">
+
+    <div class="item">
+        <img src="" width="" height="" />
+    </div>
+
+</script>
+<script src="/jekyll_demo/js/jquery.min.js"></script>
+<script src="/jekyll_demo/js/waterfall_js/handlebars.js"></script>
+<script src="/jekyll_demo/js/waterfall_js/waterfall.min.js"></script>
+<script>
+$('#container').waterfall({
+    itemCls: 'item',
+    colWidth: 222,
+    gutterWidth: 15,
+    gutterHeight: 15,
+    isAnimated: true,
+    animationOptions: {
+    },
+    path: function(page) {
+        return '/jekyll_demo/data/data1.json?page=' + page;
+    }
+});
+</script>
+</body>
+</html>
