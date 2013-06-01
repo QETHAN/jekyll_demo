@@ -25,6 +25,7 @@ a:hover{color:#333; text-decoration:underline;}
 
 .video-list{width:540px; margin: 0 auto; margin-bottom: 20px;text-align:justify;
 border:1px solid #ddd; padding: 10px;}
+
 .text-justify-list{display:inline-block; width:97px; margin-bottom:15px;  vertical-align:top;}
 
 .share-figure{display:block;width:95px; height:72px; overflow:hidden; position:relative; border:1px solid #DFDFDF; padding:1px;}
@@ -32,12 +33,13 @@ border:1px solid #ddd; padding: 10px;}
 /*播放按钮 背景*/
 .share-figure span{position:absolute; top:0; left:0; width:97px; height:74px; background:url(http://a.xnimg.cn/imgpro/share/hot-share-v3.png) no-repeat 35px -162px;opacity: 0.9;*filter: alpha(opacity=90); text-indent:-9999px; outline:none;}
 .share-figure:hover span{background-position:35px -237px;}
+
 .share-name{display:block;margin:5px 0; height:2em;vertical-align:baseline;line-height:15px;}
 .share-num{color:#333; float:left;}
 .share-num em{font-size:11px;color:#666; font-family:Arial;}
 .float-right{float:right;}
 
-.justify_fix{display:inline-block; width:100%; height:0; overflow:hidden; *zoom:1;}
+.justify_fix{display:inline-block; *display:inline; width:100%; height:0; overflow:hidden; *zoom:1;}
 
 
 

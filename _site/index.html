@@ -114,13 +114,13 @@
 	}
 
 	#footer .wrapper .profile {
+		position: relative;
 		float: left;
 		width: 200px;
 		margin: 10px 20px;
 		text-align: center;
 	}
 	#footer .wrapper h3 {
-		display: block;
 		width: 100%;
 		color: #eee;
 		font-weight: bold;
@@ -140,6 +140,12 @@
 		margin: 8px 0px;
 	}
 
+	#footer .wrapper .profile #email {
+		display: block;
+		position: absolute;
+		top: -140px;
+		left: 140px;
+	}
 	#footer .wrapper .cloud {
 		float: left;
 		width: 300px;
@@ -181,6 +187,12 @@
 		<h2>最新文章</h2>
 		<div class="articles">
 			<ul>
+				
+				<li>
+					<h3>31 May 2013</h3>
+
+					<a href="/jekyll_demo/2013/05/31/%E9%80%8F%E6%98%8E.html">透明的 火影</a>
+				</li>
 				
 				<li>
 					<h3>30 May 2013</h3>
@@ -230,17 +242,23 @@
 </div>
 <div id="footer">
 	<div class="wrapper">
-		<div class="profile">
+		<div class="profile vcard">
 			<h3>关于 我</h3>
 			<ul>
 				<li>
-					<img src="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg">
+					<img class="photo" src="https://lh4.googleusercontent.com/-bVeLjJQprsI/UW-fy9l1PmI/AAAAAAAAABw/jfbNWEMwA_g/w506-h508-o/IMG_0035.jpg">
 				</li>
 				<li>
-					<span><strong>QETHAN</strong></span>
+					<span class="nickname"><strong>QETHAN</strong></span>
 				</li>
 			</ul>
+			<p id="email">
+					<h3>
+						<a class="email" href="mailto:qbylucky@gmail.com">邮箱: Gmail</a>
+					</h3>
+			</p>
 		</div>
+		
 		<div class="cloud">
 			<h3>标签云</h3>
 			<a href='http://qethan.github.io/jekyll_demo/' title='web前端' style='font-size: 8pt;'>web前端</a>
