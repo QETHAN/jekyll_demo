@@ -410,7 +410,7 @@ CoffeeScript 的一般原则，是可以省略许多不必要的括号和大括�
 		</div>
 	</div>
 	<div id="disqus_thread"></div>
-	<script src="//cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'qethan'; // required: replace example with your forum shortname
@@ -422,7 +422,7 @@ CoffeeScript 的一般原则，是可以省略许多不必要的括号和大括�
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
 
-        $('#disqus_thread').find('#footer').remove();
+
     </script>
     
 	<footer class="footer">
@@ -432,8 +432,13 @@ CoffeeScript 的一般原则，是可以省略许多不必要的括号和大括�
 			</p>
 		</div>
 	</footer>
-	
+	<script src="//cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="//cdnjs.bootcss.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			 $('#disqus_thread').find('#footer').remove();
+		});
+	</script>
 	<!--[if lte IE 6]>
   <script type="text/javascript" src="{{site.baseurl}}bootstrap/js/bootstrap-ie.js"></script>
   <![endif]-->
